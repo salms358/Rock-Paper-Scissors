@@ -18,19 +18,18 @@ function ComputerChoice() {
 }
 
 function NumberOfRounds(user, computer) {
-if (user_scores === 5) {
-    Roundnumber++
- NumberOfRounds_span.innerHTML = Roundnumber;
- Outcome(`${user} wins the round against ${computer}`)
- 
-}
-
-else if (comp_scores === 5) {
-    Roundnumber++
-NumberOfRounds_span.innerHTML = Roundnumber;
-Outcome(`${user} loses the round against ${computer}`)
-}
-}
+    if (user_scores === 5) {
+        Roundnumber++
+     NumberOfRounds_span.innerHTML = Roundnumber;
+     Outcome(`${user} wins the round against ${computer}`)
+    }
+    else if (comp_scores === 5) {
+        Roundnumber++
+    NumberOfRounds_span.innerHTML = Roundnumber;
+    Outcome(`${user} loses the round against ${computer}`)
+    }
+    }
+    
 function Outcome(result) {
     document.getElementById('round-outcome').innerHTML = result;
 }
