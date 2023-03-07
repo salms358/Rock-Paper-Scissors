@@ -18,19 +18,20 @@ function ComputerChoice() {
 }
 
 function NumberOfRounds(user, computer) {
-if (user_scores === 5) {
+    if (user_scores == 5 || comp_scores == 5) {
     Roundnumber++
  NumberOfRounds_span.innerHTML = Roundnumber;
+
+ user_scores = 0;
+ comp_scores = 0;
+ userScore_span.textContent = user_scores;
+ compScore_span.textContent = comp_scores;
  Outcome(`${user} wins the round against ${computer}`)
- 
+
 }
 
-else if (comp_scores === 5) {
-    Roundnumber++
-NumberOfRounds_span.innerHTML = Roundnumber;
-Outcome(`${user} loses the round against ${computer}`)
 }
-}
+
 function Outcome(result) {
     document.getElementById('round-outcome').innerHTML = result;
 }
@@ -100,7 +101,7 @@ function rps(userChoice, pressedButton) {
             pressedButton.classList.add("glowing_blue");
             break;   
     }
-    
+    NumberOfRounds()
 }
 
 function round() {
@@ -114,6 +115,7 @@ function round() {
     div_scissors.addEventListener('click',  function(event) {
     rps("scissors", event.target)
         })
+     
     }
 
 round();
