@@ -1,44 +1,60 @@
 
     <!DOCTYPE html>
     <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="theme-color" content="#317EFB">
-        <title>Rock Paper Scissors game</title>
-        <link rel="stylesheet" href="assets/css/style.css">
-        <script src="https://kit.fontawesome.com/26caacf38c.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <header>
-    <h1>Rock paper scissors</h1>
-        </header>
-    <div class="scorz">
-        <div class="you" id="label">You</div>
-        <div class="you" id="comp-label">Computer</div>
-    <span id="player-score">0</span>:<span id="comp-score">0</span>
-    <span id="NumberOfRounds">:0</span>
-    </div>
-  
-    <div class="resultz">
-        <p id="result-text"></p>
-    </div>
-    <div>
-        <p id="round-outcome"></p>
-    </div>
-        <div class="options" id="glowing_border">
-         <div class="option" id="rock">
-            <i class="fa-solid fa-hand-back-fist">Rock</i>  
-         </div>
-         <div class="option" id="paper">
-            <i class="fa-solid fa-hand">Paper</i>
-         </div>
-         <div class="option" id="scissors">
-            <i class="fa-solid fa-hand-scissors">Scissors</i>
-         </div>
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="theme-color" content="#317EFB">
+            <title>Rock Paper Scissors game</title>
+            <link rel="stylesheet" href="assets/css/style.css">
+            <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+            <script src="https://kit.fontawesome.com/26caacf38c.js" crossorigin="anonymous"></script>
+        </head>
+        <body>
+            <header>
+        <h1>Rock paper scissors</h1>
+            </header>
+        <div class="scorz">
+            <div class="you" id="label">You</div>
+            <div class="you" id="comp-label">Computer</div>
+        <span id="player-score">0</span>:<span id="comp-score">0</span>
+        <span id="NumberOfRounds">:0</span>
         </div>
-        <p id="punch">Choose your weapon!</p>
-        <script src = "assets/js/script.js"></script>
-    </body>
-    </html>
+    
+        <div class="resultz">
+            <p id="result-text"></p>
+        </div>
+        <div>
+            <p id="round-outcome"></p>
+        </div>
+            <div class="options" id="glowing_border">
+            <div class="option" id="rock">
+                <i class="fa-solid fa-hand-back-fist">Rock</i>  
+            </div>
+            <div class="option" id="paper">
+                <i class="fa-solid fa-hand">Paper</i>
+            </div>
+            <div class="option" id="scissors">
+                <i class="fa-solid fa-hand-scissors">Scissors</i>
+            </div>
+            </div>
+            <p id="punch">Choose your weapon!</p>
+            <script src = "assets/js/script.js"></script>
+            
+        <div class="form_holder" id="form">
+            <form class="score_form" method="POST" action="https://formdump.codeinstitute.net/">
+                    
+                    <label for="email_address">Email Address:</label>
+                    <input type="text" id="email_address" name="email_address" placeholder="Email Address" required>
+                    <label for="submit"></label>
+                    <input type="submit" id="submit" value="submit">
+                    <input type="hidden" value="">
+        
+                    <br/>
+                    <br/>
+        
+            </form>
+        </div>
+        </body>
+</html>
