@@ -16,17 +16,23 @@
         <h1>Rock paper scissors</h1>
             </header>
         <div class="scorz">
-            <div class="you" id="label">You</div>
-            <div class="you" id="comp-label">Computer</div>
-        <span id="player-score">0</span>:<span id="comp-score">0</span>
-        <span id="NumberOfRounds">:0</span>
+            <div class="rounds" id="rounds">
+                Rounds  <span id="NumberOfRounds">0</span>
+            </div>
+            <div class="you" id="label">
+                You <span id="player-score">0</span>
+
+            </div>
+            <div class="you" id="comp-label">
+                Computer <span id="comp-score">0</span>
+            </div>
+            
+        
+       
         </div>
     
         <div class="resultz">
             <p id="result-text"></p>
-        </div>
-        <div>
-            <p id="round-outcome"></p>
         </div>
             <div class="options" id="glowing_border">
             <div class="option" id="rock">
@@ -40,21 +46,29 @@
             </div>
             </div>
             <p id="punch">Choose your weapon!</p>
-            <script src = "assets/js/script.js"></script>
+
+            <div>
+                <p id="round-outcome"></p>
+            </div>
             
-        <div class="form_holder" id="form">
+        <div class="form_holder hide" id="form">
             <form class="score_form" method="POST" action="https://formdump.codeinstitute.net/">
                     
                     <label for="email_address">Email Address:</label>
                     <input type="text" id="email_address" name="email_address" placeholder="Email Address" required>
                     <label for="submit"></label>
-                    <input type="submit" id="submit" value="submit">
-                    <input type="hidden" value="">
-        
-                    <br/>
-                    <br/>
+                    <input type="button" id="submit" value="submit">
         
             </form>
         </div>
+
         </body>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function() {
+                // https://dashboard.emailjs.com/admin/account
+                emailjs.init('_FXcuq1Ham5MJUKko');
+            })();
+        </script>
+        <script src = "assets/js/script.js"></script>
 </html>

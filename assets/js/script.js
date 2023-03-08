@@ -17,22 +17,34 @@
         return options[ran_No];
     }
 
-    function NumberOfRounds(user, computer) {
+    function NumberOfRounds() {
+        Roundnumber++;
+        document.getElementById('form').classList.add('hide');
+        NumberOfRounds_span.innerHTML = Roundnumber;
         if (userScore == 5 || compScore == 5) {
-        Roundnumber++
-    NumberOfRounds_span.innerHTML = Roundnumber;
-
-    userScore = 0;
-    compScore = 0;
-    userScore_span.textContent = userScore;
-    compScore_span.textContent = compScore;
-    Outcome(`${user} wins the round against ${computer}`)
-
-    }
+            if (userScore == 5){
+                Outcome(`User wins against Computer ${userScore} to ${compScore} in ${Roundnumber} rounds`);
+                document.getElementById('form').classList.remove('hide');
+            }
+            else{
+                Outcome(`Computer wins against User ${compScore} to ${userScore} in ${Roundnumber} rounds`);
+            }
+            Roundnumber = 0;
+            userScore = 0;
+            compScore = 0;
+           
+            setTimeout(function(){
+                userScore_span.textContent = userScore;
+                compScore_span.textContent = compScore;
+                NumberOfRounds_span.innerHTML = Roundnumber;
+                document.getElementById('round-outcome').classList.add('hide');
+            }, 10000);
+        }
 
     }
 
     function Outcome(result) {
+        document.getElementById('round-outcome').classList.remove('hide');
         document.getElementById('round-outcome').innerHTML = result;
     }
     function play_result(result) {
@@ -54,6 +66,20 @@
         }
     }
       
+
+    function sendEmail(){
+        let templateParams = {
+            user_email: document.getElementById('email_address').value,
+            score: 5,
+        };
+        
+        emailjs.send('service_3otnutb', 'template_cebba9n', templateParams)
+        .then(function(response) {
+            console.log('SUCCESS!', response.status, response.text);
+        }, function(error) {
+            console.log('FAILED...', error);
+        });
+    }
 
     function win(user, computer) {
         userScore++
@@ -105,7 +131,6 @@
     }
 
     function round() {
-        
         div_paper.addEventListener('click', function(event) {
         rps("paper",  event.target)
     })
@@ -119,3 +144,7 @@
         }
 
     round();
+
+    document.getElementById('submit').addEventListener('click', function(){
+        sendEmail();
+    })
