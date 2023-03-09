@@ -111,3 +111,36 @@
     #round-outcome{
         text-align: center;
     }
+    @media only screen and (min-width: 481px) {
+        .option {
+        margin-left: 20px;
+        
+        text-align: center;
+    }
+    #punch {
+        font-size: 25px;
+    }
+    .scorz {
+        text-align: center;
+        font-size: medium;
+    }
+}
+    @media only screen and (min-width: 768px) {
+
+    }
+    @media only screen and (min-width: 1025px) {
+.option {
+    font-size: 30px;
+}
+.options {
+    padding-top: 40px;
+    
+}
+.scorz {
+    font-size: larger;
+    border: 4px solid;
+    margin: auto;
+    
+}
+
+    }

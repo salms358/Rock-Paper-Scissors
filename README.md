@@ -43,4 +43,10 @@ Fun classic game of rock paper scissors
   -Whilst playing I like how everything is easy to tell the difference between the icons. Its very easy to navigate around as the colours are contrasting.
 
   ## Testing
+
   ## Validator testing
+  - HTML validator showed no errors but 2 warnings about including type in script tags 
+  [HTML validator](https://validator.w3.org/nu/?doc=https%3A%2F%2F8000-salms358-rockpapersciss-g2ikctro4ln.ws-eu89b.gitpod.io%2F)
+  - For CSS there were no errors or warnings
+  [CSS validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2F8000-salms358-rockpapersciss-g2ikctro4ln.ws-eu89b.gitpod.io%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+  - For JS there were a lot of warnings but no sufficient problems.

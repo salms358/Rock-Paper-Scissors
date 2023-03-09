@@ -9,6 +9,9 @@
     let userScore = 0;
     let compScore = 0;
     let Roundnumber = 0;
+    let UserScoreEmail = 0;
+    let CompScoreEmail = 0;
+   
 
     function ComputerChoice() {
         const options = ['rock','paper','scissors'];
@@ -29,6 +32,8 @@
             else{
                 Outcome(`Computer wins against User ${compScore} to ${userScore} in ${Roundnumber} rounds`);
             }
+            UserScoreEmail = userScore;
+            CompScoreEmail = compScore;
             Roundnumber = 0;
             userScore = 0;
             compScore = 0;
@@ -68,9 +73,11 @@
       
 
     function sendEmail(){
+        console.log("CompScoreEmail, UserScoreEmail, userScore, compScore", CompScoreEmail, UserScoreEmail, userScore, compScore)
         let templateParams = {
             user_email: document.getElementById('email_address').value,
-            score: 5,
+            score: UserScoreEmail,
+            compScore: CompScoreEmail,
         };
         
         emailjs.send('service_3otnutb', 'template_cebba9n', templateParams)
