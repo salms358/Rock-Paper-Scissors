@@ -125,9 +125,6 @@
         font-size: medium;
     }
 }
-    @media only screen and (min-width: 768px) {
-
-    }
     @media only screen and (min-width: 1025px) {
 .option {
     font-size: 30px;
