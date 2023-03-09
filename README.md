@@ -44,7 +44,7 @@ Fun classic game of rock paper scissors
     -Whilst playing I like how everything is easy to tell the difference between the icons. Its very easy to navigate around as the colours are contrasting.
 
   # Testing
-    The game seemed to be working the same way throughout the browsers Microsoft Edge, Mozilla Firefox and Goggle Chrome. The email text was working andlead to the scores of the user and computer to be sent to their email.
+    The game seemed to be working the same way throughout the browsers Microsoft Edge, Mozilla Firefox and Google Chrome. The email text was working andlead to the scores of the user and computer to be sent to their email.
 
   ## Validator testing
 
@@ -55,5 +55,5 @@ Fun classic game of rock paper scissors
       - For JS there were a lot of warnings but no sufficient problems.
       - My code obtained a high accessibility score of 97% and a overall score of 95% suggesting that users will find it easy to play the game.
   [CSS validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2F8000-salms358-rockpapersciss-g2ikctro4ln.ws-eu89b.gitpod.io%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
-  
+
   [HTML validator](https://validator.w3.org/nu/?doc=https%3A%2F%2F8000-salms358-rockpapersciss-g2ikctro4ln.ws-eu89b.gitpod.io%2F)
