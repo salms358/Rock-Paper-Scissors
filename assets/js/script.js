@@ -114,7 +114,8 @@ involves the form being hidden for the duraation of the game until the user is t
     }
     
 
-/*
+/*Shows all of the possble choices that the user and computer makes it allows their choices to be compared. The 
+win draw and lose functions are called here to ensure that the program knows which combinations have the outcome of win, draw or lose*/
     function rps(userChoice, pressedButton) {
         const computerChoice = ComputerChoice();
         console.log(`Computer plays ${computerChoice}`);
@@ -139,9 +140,10 @@ involves the form being hidden for the duraation of the game until the user is t
                 pressedButton.classList.add("glowing_blue");
                 break;   
         }
+        /*The number of rounds is called here to make sure that that after the scores are updated the round number should go up by 1*/
         NumberOfRounds()
     }
-
+/*
     function round() {
         div_paper.addEventListener('click', function(event) {
         rps("paper",  event.target)
