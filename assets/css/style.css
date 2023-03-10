@@ -6,20 +6,24 @@
         margin: 0;
         box-sizing: border-box;
     }
+    /*sets the overall font/theme of the game ensuring everything is consistent*/
     body {
         background-color: rgb(24, 223, 223);
     font-family: roboto;
     }
+    /*changes the colour of the border of the heading*/
     header {
         background:darkslategray;
         padding: 20px;
         padding-top: 10px;
     }
+    /*targets the h1 tag controlling its colour, positioning and font*/
     header > h1 {
     color:aliceblue;
     text-align: center;
     font-family: roboto;
     }
+    /*css for the scoreboard allows the scoreboard to be positioned correctly and look the part. The border radius was an inspiration from a youtube video*/
     .scorz {
         border: 3px solid;
         padding: 20px 35px;
@@ -31,28 +35,32 @@
         position: relative;
         height: 85px;
     }
+    /*labels for the user and computer scores*/
     .you, .rounds {
         background-color:cornflowerblue;
         color: aliceblue;
         padding: 5px 10px;
         text-align: center;
     }
+    /*positioning of both the user and computer scores*/
     #label {
     position:absolute;
     top:0;
     left:0;
     }
+    /*positions the number od rounds*/
     #rounds {
         position:absolute;
         top:40px;
         left:95px;
         }
-
+   /*alters the positioning of the computer score label*/
     #comp-label {
     position: absolute;
     top: 0;
     right: 0;
     }
+    /*these two following paragraphs target the caption which states who won and what option overpowers the other*/
     .resultz {
         font-family: roboto;
         font-weight: 200;
@@ -63,11 +71,13 @@
         font-weight: bold;
         font-family: roboto;
     }
+    /*To style the whole row of icons*/
     .options {
         text-align: center;
         padding-top: 12px;
         
     }
+    /*to style each individual icon*/
     .option {
         display: inline-block;
         border: 3px solid;
@@ -77,12 +87,14 @@
         font-size: 20px;
         transition: all 1.5s ease;
     }
+    /*text caption underneath the icons is of the right size and in the right position*/
     #punch {
         text-align: center;
         font-size: 15px;
         font-family: roboto;
         padding-top: 20px;
     }
+    /*The three following glowing classes allow the icons to glow eithwer green blue or red depending if the user wins loses or draws against the computer*/
     .glowing_green {
     border: 4px solid;
     color: #4dcc7d;
@@ -99,14 +111,17 @@
         color: #4d62cc;
         box-shadow: 0 0 10px #313eb4
     }
+    /*form is to be positioned in the center*/
     .form_holder {
         text-align: center;
         padding-top: 15px;
        
     }
+    /*Makes sure the round outcome is hidden until the user wins*/
     .hide{
         display: none;
     }
+    /*The round is to be in the center when displayed*/
     
     #round-outcome{
         text-align: center;
