@@ -20,7 +20,8 @@
         console.log(ran_No);
         return options[ran_No];
     }
-
+/*Makes sure the Round number is increased, displays the statement showing who won and the amount of rounds it took for either the user or the computer to win. Moreover this function 
+involves the form being hidden for the duraation of the game until the user is the winner*/
     function NumberOfRounds() {
         Roundnumber++;
         document.getElementById('form').classList.add('hide')
@@ -38,7 +39,7 @@
             Roundnumber = 0;
             userScore = 0;
             compScore = 0;
-           
+           /*Makes sure the round number and scores are shown for limited time until the scores reset*/
             setTimeout(function() {
                 userScore_span.textContent = userScore;
                 compScore_span.textContent = compScore;
@@ -48,15 +49,16 @@
         }
 
     }
-
+/*The functions that is called to display the round outcome*/
     function Outcome(result) {
         document.getElementById('round-outcome').classList.remove('hide');
         document.getElementById('round-outcome').innerHTML = result;
     }
+    /*Is called to determine how the user wins loses or draws e.g.rock overpowers paper, you win*/
     function play_result(result) {
         document.getElementById('result-text').innerHTML = result;
     }
-
+/*Makes sure the borders of the icons stop glowing after another option is clicked*/
     function removeBorder() {
             let options = document.querySelectorAll(".option");
                 for (let i = 0; i < options.length; i++) {
@@ -72,7 +74,7 @@
                 }
     }
       
-
+/*Code from emailJS so that a email showing the scores is sent to the user*/
     function sendEmail(){
       console.log("CompScoreEmail, UserScoreEmail, userScore, compScore", CompScoreEmail, UserScoreEmail, userScore, compScore);
             let templateParams = {
@@ -88,7 +90,9 @@
             console.log('FAILED...', error);
         });
     }
-
+ /*End of the email JS code*/
+ /*The win, lose and draw functions are to make sure the scoreboard is updated the score is only incremented when the user wins or loses 
+ as drawing does not impact the score*/
     function win(user, computer) {
         userScore++
         userScore_span.innerHTML = userScore;
@@ -110,7 +114,7 @@
     }
     
 
-
+/*
     function rps(userChoice, pressedButton) {
         const computerChoice = ComputerChoice();
         console.log(`Computer plays ${computerChoice}`);
