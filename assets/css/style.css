@@ -111,7 +111,7 @@
     #round-outcome{
         text-align: center;
     }
-    @media only screen and (min-width: 481px) {
+    /* @media only screen and (min-width: 481px) {
         .option {
         margin-left: 20px;
         
@@ -144,4 +144,4 @@
 #punch {
     padding-top: 50px;
 }
-    }
+    }*/

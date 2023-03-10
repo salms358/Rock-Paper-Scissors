@@ -22,6 +22,7 @@ Fun classic game of rock paper scissors
     When the user wins the game a form will appear which allows the user to enter in their email and receive their scores via email. 
     
     I added this feature as it allows the user to keep track of their scores as they play or if they want to show their friends. 
+    
 ## Captions
     -I added some captions one of them comparing the users and computers choice and who wins e.g."Rock overpowerd paper, you win". 
 
@@ -57,3 +58,7 @@ Fun classic game of rock paper scissors
   [CSS validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2F8000-salms358-rockpapersciss-g2ikctro4ln.ws-eu89b.gitpod.io%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
   [HTML validator](https://validator.w3.org/nu/?doc=https%3A%2F%2F8000-salms358-rockpapersciss-g2ikctro4ln.ws-eu89b.gitpod.io%2F)
+
+[Light house test](https://lighthouse-metrics.com/lighthouse/checks/280bdd1f-c65d-4e32-a48e-6eed5c1d5cae)
+
+

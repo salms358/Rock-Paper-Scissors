@@ -12,17 +12,22 @@
             <script src="https://kit.fontawesome.com/26caacf38c.js" crossorigin="anonymous"></script>
         </head>
         <body>
+            <!--start of header includes the rock paper scissors heading-->
             <header>
         <h1>Rock paper scissors</h1>
             </header>
+            <!--End of header-->
+            <!--scoreboard class which includes the number of rounds-->
         <div class="scorz">
             <div class="rounds" id="rounds">
                 Rounds  <span id="NumberOfRounds">0</span>
             </div>
+            <!--Incharge of showing the player score on the scoreboard includes id and classes so that I can style them using CSS-->
             <div class="you" id="label">
                 You <span id="player-score">0</span>
 
             </div>
+            <!--Incharge of showing the computer score on the scoreboard includes id and classes so that I can style them using CSS-->
             <div class="you" id="comp-label">
                 Computer <span id="comp-score">0</span>
             </div>
@@ -30,30 +35,35 @@
         
        
         </div>
-    
+         <!--This  div contains the text that appears once one of the three options are chosen e.g.rock overpowers paper, you win-->
         <div class="resultz">
             <p id="result-text"></p>
         </div>
+        <!--The 2 divs here contain the classes which are used to style the icons and the individual icons. The glowing_order allows the icons glow different colours depending on if the user wins or not-->
             <div class="options" id="glowing_border">
+                <!--Rock icon and class to style the icon-->
             <div class="option" id="rock">
                 <i class="fa-solid fa-hand-back-fist">Rock</i>  
             </div>
+            <!--Paper icon and class to style the icon-->
             <div class="option" id="paper">
                 <i class="fa-solid fa-hand">Paper</i>
             </div>
+               <!--Scissors icon and class to style the icon-->
             <div class="option" id="scissors">
                 <i class="fa-solid fa-hand-scissors">Scissors</i>
             </div>
             </div>
+            <!--Caption underneath the icons-->
             <p id="punch">Choose your weapon!</p>
-
+           <!--This is the id used to display the caption which states how many rounds it took for the user to win/lose against the computer-->
             <div>
                 <p id="round-outcome"></p>
             </div>
-            
+            <!--The form that is shown only after the user wins the game the hidden property allows it to appear when needed-->
         <div class="form_holder hide" id="form">
             <form class="score_form" method="POST" action="https://formdump.codeinstitute.net/">
-                    
+                    <!--Allows the email Address text be present alongside a placeholder submit button is also present when pressed email should be sent to the user-->
                     <label for="email_address">Email Address:</label>
                     <input type="text" id="email_address" name="email_address" placeholder="Email Address" required>
                     <label for="submit"></label>
@@ -61,6 +71,7 @@
         
             </form>
         </div>
+        <!--from emailJS enabling the email template to be sent to the users -->
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
         </script>
         <script type="text/javascript">
@@ -69,6 +80,8 @@
                 emailjs.init('_FXcuq1Ham5MJUKko');
             })();
         </script>
+        <!--end of emailJS code-->
+        <!--ensures the HTML is linked to the javascript-->
         <script src = "assets/js/script.js">
         </script>
         </body>
