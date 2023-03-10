@@ -143,7 +143,7 @@ win draw and lose functions are called here to ensure that the program knows whi
         /*The number of rounds is called here to make sure that that after the scores are updated the round number should go up by 1*/
         NumberOfRounds()
     }
-/*
+/*Identifies the button clicked e.g. when i click rock the computer knows ive clicke the rock button*/
     function round() {
         div_paper.addEventListener('click', function(event) {
         rps("paper",  event.target)
@@ -158,7 +158,7 @@ win draw and lose functions are called here to ensure that the program knows whi
         }
 
     round()
-
+ /*Makessure the email is submitted to the users email*/
     document.getElementById('submit').addEventListener('click', function(){
         sendEmail()
     });
