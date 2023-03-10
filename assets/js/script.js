@@ -1,4 +1,4 @@
-
+  /*Defining all of the variables needed in the project including the scores and the displaying of the scores*/
     const div_paper = document.getElementById("paper");
     const userScore_span = document.getElementById("player-score");
     const div_rock = document.getElementById("rock");
@@ -6,13 +6,14 @@
     const score_board_div = document.getElementsByClassName(".scorz");
     const div_scissors = document.getElementById("scissors");
     const NumberOfRounds_span = document.getElementById("NumberOfRounds");
+    /*All of the scores involved in the game*/
     let userScore = 0;
     let compScore = 0;
     let Roundnumber = 0;
     let UserScoreEmail = 0;
     let CompScoreEmail = 0;
    
-
+ /*generates a random choice from the computer so that it can be later compared with the user scores to determine who wins the round*/
     function ComputerChoice() {
         const options = ['rock','paper','scissors'];
         const ran_No = Math.floor(Math.random()*3);
