@@ -24,7 +24,7 @@
     text-align: center;
     font-family: roboto;
     }
-    /*css for the scoreboard allows the scoreboard to be positioned correctly and look the part. The border radius was an inspiration from a youtube video*/
+    /*css for the scoreboard allows the scoreboard to be positioned correctly and look the part. The border radius was an inspiration from a youtube video by freecodecamp*/
     .scorz {
         border: 3px solid;
         padding: 20px 35px;
@@ -160,6 +160,6 @@
     
 }
 #punch {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
     }

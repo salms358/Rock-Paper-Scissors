@@ -21,7 +21,7 @@ Fun classic game of rock paper scissors
     
     Additionally there is text displayed when the user wins, draws or loses and the fact that what they chose beats the computers choice.
   [Green-glow](https://mail.google.com/mail/u/0?ui=2&ik=318e7d6810&attid=0.1&permmsgid=msg-f:1760096400850960798&th=186d1e59e72a419e&view=att&disp=safe)
-
+ 
   [Purple-glow](https://mail.google.com/mail/u/0?ui=2&ik=318e7d6810&attid=0.1&permmsgid=msg-f:1760096574353890183&th=186d1e824cbedb87&view=att&disp=safe)
 
   [Red-glow](https://mail.google.com/mail/u/0?ui=2&ik=318e7d6810&attid=0.1&permmsgid=msg-f:1760096668110708688&th=186d1e9821165fd0&view=att&disp=safe)
