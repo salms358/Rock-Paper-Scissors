@@ -1,10 +1,11 @@
 # Rock-Paper-Scissors
 Fun classic game of rock paper scissors
 ## Description
-    The game is a basic game of Rock paper scissors in which the icons will glow either green, red or blue depending if you win lose or draw with the computer. First to reach 5 points wins. There are 2 rounds in the game the winner can enter in their email to recieve their scores via email. 
+    The game is a basic game of Rock paper scissors in which the icons will glow either green, red or blue depending if you win lose or draw with the computer. First to reach 5 points wins. If the user wins they can enter in their email to recieve their scores via email. 
 
   
- [website]()
+ [website](https://salms358.github.io/Rock-Paper-Scissors/)
+
  [Am I responsive](https://ui.dev/amiresponsive?url=https://salms358.github.io/Rock-Paper-Scissors/)
  # Features:
  ## Theme
@@ -20,16 +21,24 @@ Fun classic game of rock paper scissors
     This will allow it to be more convinient with individuals who perhaps have dyslexia or any other problems with reading. 
     
     Additionally there is text displayed when the user wins, draws or loses and the fact that what they chose beats the computers choice.
-  [Green-glow](https://mail.google.com/mail/u/0?ui=2&ik=318e7d6810&attid=0.1&permmsgid=msg-f:1760096400850960798&th=186d1e59e72a419e&view=att&disp=safe)
- 
-  [Purple-glow](https://mail.google.com/mail/u/0?ui=2&ik=318e7d6810&attid=0.1&permmsgid=msg-f:1760096574353890183&th=186d1e824cbedb87&view=att&disp=safe)
+  ![Green-glow](https://mail.google.com/mail/u/0?ui=2&ik=318e7d6810&attid=0.1&permmsgid=msg-f:1760096400850960798&th=186d1e59e72a419e&view=att&disp=safe)
 
-  [Red-glow](https://mail.google.com/mail/u/0?ui=2&ik=318e7d6810&attid=0.1&permmsgid=msg-f:1760096668110708688&th=186d1e9821165fd0&view=att&disp=safe)
+  Shows that the user has won the round and scored a point as a result.
+
+ ![Red-glow](https://user-images.githubusercontent.com/119611403/224512794-7a01f543-cbf9-4255-af0e-8e7a09c848b5.jpeg)
+
+ Shows that the user has lost the round against the computer therefore the computer will get a point 
+
+  ![Purple-glow](https://mail.google.com/mail/u/0?ui=2&ik=318e7d6810&attid=0.1&permmsgid=msg-f:1760096574353890183&th=186d1e824cbedb87&view=att&disp=safe)
+
+  The purple glow indicates that that there is a draw between the user and the computer.
+
+  
 ## Form
     When the user wins the game a form will appear which allows the user to enter in their email and receive their scores via email. 
     
     I added this feature as it allows the user to keep track of their scores as they play or if they want to show their friends. 
-  [image of email form](https://mail.google.com/mail/u/0?ui=2&ik=318e7d6810&attid=0.1&permmsgid=msg-f:1760095816233851336&th=186d1dd1c94519c8&view=att&disp=safe)
+  ![image of email form](https://mail.google.com/mail/u/0?ui=2&ik=318e7d6810&attid=0.1&permmsgid=msg-f:1760095816233851336&th=186d1dd1c94519c8&view=att&disp=safe)
   
 ## Captions
     -I added some captions one of them comparing the users and computers choice and who wins e.g."Rock overpowerd paper, you win". I added this feature as some may not know which options overpower each other (those new to playing).
@@ -46,22 +55,21 @@ Fun classic game of rock paper scissors
   ## Second-time user
     -When playing the game I noticed that when I won a box appeared asking me to enter in my email. I got sent an email showing me my scores.
 
-    -Moreover, when I won It showed me how many rounds it took to beat the computer which I found really helpful, it motivates me to try and get a better score in the future.
+    -Moreover, when I won, It showed me how many rounds it took to beat the computer which I found really helpful, it motivates me to try and get a better score in the future.
 
     -When I win/lose the scores reset so that I can play again. Additionally there is a caption which allows me to know why I won or lost.
 
     - I played the game on my laptop in which the icons were of a decent size the game was responsive 
   ## Frequent-user
-    -Whilst playing I like how everything is easy to tell the difference between the icons. Its very easy to navigate around as the colours are contrasting.
+    -Whilst playing I like how everything is easy to tell the difference between the icons. Its very easy to navigate around as the colours are contrasting. So the game can be played by more people.
 
     - I played the game on a tablet one of the icons was a little out of place but this did not get in the way when playing the game. Moreover when I tried to play the game on different browsers the game was exactly the same across all of the browsers.
   # Testing
     The game seemed to be working the same way throughout the browsers Microsoft Edge, Mozilla Firefox and Google Chrome. The email text was working and lead to the scores of the user and computer to be sent to their email.
-    The website was working the same across Microsoft edge, firefox and google chrome.
 
-The website has contrasting-colours so it is easier for users to read the information.
-
-The form is validated the submit button leads to the opening of the code institute 'congratulations' page. Moreover, if the user misses out on a field the form cannot be submitted and the user will be told to complete the field they missed out on for their form to be submitted.
+    The website was working the same across Microsoft edge, firefox and google chrome. The website has contrasting-colours so it is easier for users to read the information.
+    
+    The form is validated the submit button leads to the opening of the code institute 'congratulations' page. Moreover, if the user misses out on a field the form cannot be submitted and the user will be told to complete the field they missed out on for their form to be submitted.
 
 
   ## Validator testing
@@ -70,8 +78,10 @@ The form is validated the submit button leads to the opening of the code institu
 
       - For CSS there were no errors or warnings.
 
-      - For JS there were a lot of warnings but no sufficient problems.
+      - For JS there were a lot of warnings regarding missing semicolons which were corrected, but no sufficient problems.
+
       - My code obtained a high accessibility score of 97% and a overall score of 95% suggesting that users will find it easy to play the game.
+
   [CSS validator](http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fsalms358.github.io%2FRock-Paper-Scissors%2F&usermedium=all&vextwarning=&warning=1)
 
   [HTML validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsalms358.github.io%2FRock-Paper-Scissors%2F)
@@ -85,7 +95,9 @@ The form is validated the submit button leads to the opening of the code institu
 -One of the buttons  move slightly out of place when the screen is set to tablet format. But at times this problem does not show up.
 # Deployment 
 1.Got to settings in Github repository.
+
 2.Select main-branch from the source drop-down menu.
+
 3.Once selected code for the website should be provided.
 # Languages
 1. HTML
@@ -100,7 +112,7 @@ YouTube video - https://www.youtube.com/watch?v=jaVNP3nIAv0&ab_channel=freeCodeC
 
 Chrome Developer Tools - Used for changing details and testing responsiveness accessed by pressing f12.
 
-Font Awesome - https://fontawesome.com/ Hand icons in footer.
+Font Awesome - https://fontawesome.com/ Hand icons for the rock paper scissors icons. 
 
 Google Fonts - https://fonts.google.com/ Used to import fonts on the website.
 
@@ -110,3 +122,4 @@ Responsinator - http://www.responsinator.com/ Used to verify the responsiveness 
  ### Stack Overflow [link](https://stackoverflow.com/)
  ### YouTube [video](https://www.youtube.com/watch?v=jaVNP3nIAv0&ab_channel=freeCodeCamp.org)
  ### Free Code Camps YouTube Channel
+ ### My mentor Antonio
