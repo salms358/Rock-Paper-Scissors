@@ -2,16 +2,16 @@
   document.addEventListener('DOMContentLoaded', function() {
   /*Defining all of the variables needed in the project including the scores and the displaying of the scores*/
     const divPaper = document.getElementById("paper");
-    const userScorespan = document.getElementById("player-score");
+    const userScoreSpan = document.getElementById("player-score");
     const divRock = document.getElementById("rock");
-    const compScore_span = document.getElementById("comp-score");
-    const score_board_div = document.getElementsByClassName(".scorz");
+    const compScoreSpan = document.getElementById("comp-score");
+    const scoreBoardDiv = document.getElementsByClassName(".scorz");
     const divScissors = document.getElementById("scissors");
     const numberOfRoundsspan = document.getElementById("NumberOfRounds");
     /*All of the scores involved in the game*/
     let userScore = 0;
     let compScore = 0;
-    let Roundnumber = 0;
+    let RoundNumber = 0;
     let userScoreEmail = 0;
     let compScoreEmail = 0;
    
@@ -25,28 +25,28 @@
 /*Makes sure the Round number is increased, displays the statement showing who won and the amount of rounds it took for either the user or the computer to win. Moreover this function 
 involves the form being hidden for the duraation of the game until the user is the winner*/
     function numberOfRounds() {
-        Roundnumber++;
-        document.getElementById('form').classList.add('hide')
-        numberOfRoundsspan.innerHTML = Roundnumber
+        RoundNumber++;
+        document.getElementById('form').classList.add('hide');
+        numberOfRoundsspan.innerHTML = RoundNumber;
         if (userScore == 5 || compScore == 5)  {
             if (userScore == 5) {
-                outCome(`User wins against Computer ${userScore} to ${compScore} in ${Roundnumber} rounds`)
-                document.getElementById('form').classList.remove('hide')
+                outCome(`User wins against Computer ${userScore} to ${compScore} in ${RoundNumber} rounds`);
+                document.getElementById('form').classList.remove('hide');
             }
             else{
-                outCome(`Computer wins against User ${compScore} to ${userScore} in ${Roundnumber} rounds`)
+                outCome(`Computer wins against User ${compScore} to ${userScore} in ${RoundNumber} rounds`);
             }
             userScoreEmail = userScore;
             compScoreEmail = compScore;
-            Roundnumber = 0;
+            RoundNumber = 0;
             userScore = 0;
             compScore = 0;
            /*Makes sure the round number and scores are shown for limited time until the scores reset*/
             setTimeout(function() {
-                userScorespan.textContent = userScore;
-                compScore_span.textContent = compScore;
-                numberOfRoundsspan.innerHTML = Roundnumber;
-                document.getElementById('round-outcome').classList.add('hide')
+                userScoreSpan.textContent = userScore;
+                compScoreSpan.textContent = compScore;
+                numberOfRoundsspan.innerHTML = RoundNumber;
+                document.getElementById('round-outcome').classList.add('hide');
             }, 10000);
         }
 
@@ -78,7 +78,7 @@ involves the form being hidden for the duraation of the game until the user is t
       
 /*Code from emailJS so that a email showing the scores is sent to the user*/
     function sendEmail(){
-      console.log("CompScoreEmail, UserScoreEmail, userScore, compScore", CompScoreEmail, UserScoreEmail, userScore, compScore);
+      console.log("CompScoreEmail, UserScoreEmail, userScore, compScore", compScoreEmail, userScoreEmail, userScore, compScore);
             let templateParams = {
                 user_email: document.getElementById('email_address').value,
                 score: userScoreEmail,
@@ -96,21 +96,21 @@ involves the form being hidden for the duraation of the game until the user is t
  /*The win, lose and draw functions are to make sure the scoreboard is updated the score is only incremented when the user wins or loses 
  as drawing does not impact the score*/
     function win(user, computer) {
-        userScore++
-        userScorespan.innerHTML = userScore;
+        userScore++;
+        userScoreSpan.innerHTML = userScore;
         playResult(`${user} overpowers ${computer}, you won`);
     }
         
     function draw() {
-        userScorespan.innerHTML = userScore;
+        userScoreSpan.innerHTML = userScore;
         playResult(`Its a draw`);         
     }
         
     
     function lose(user, computer) {
-        userScorespan.innerHTML = userScore;
+        userScoreSpan.innerHTML = userScore;
         compScore++;
-        compScore_span.innerHTML = compScore;
+        compScoreSpan.innerHTML = compScore;
         playResult(`${computer} overpowers ${user}, you lost`);
         
     }
@@ -138,32 +138,32 @@ win draw and lose functions are called here to ensure that the program knows whi
             case "rockrock":
             case "paperpaper":
             case "scissorsscissors":
-                draw()
+                draw();
                 pressedButton.classList.add("glowing_blue");
                 break;   
         }
      /*The number of rounds is called here to make sure that that after the scores are updated the round number should go up by 1*/
-     numberOfRounds()
+     numberOfRounds();
     }
    /*Identifies the button clicked e.g. when i click rock the computer knows ive clicke the rock button*/
     function clickButton() {
         divPaper.addEventListener('click', function(event) {
-            rockpaperScissors("paper",  event.target)
-    })
+            rockpaperScissors("paper",  event.target);
+    });
         divRock.addEventListener('click',  function(event) {
-            rockpaperScissors("rock", event.target)
-    })
+            rockpaperScissors("rock", event.target);
+    });
         divScissors.addEventListener('click',  function(event) {
-            rockpaperScissors("scissors", event.target)
-            })
+            rockpaperScissors("scissors", event.target);
+            });
         
         }
 
-        clickButton()
+        clickButton();
  /*Makes sure the email is submitted to the users email*/
     document.getElementById('submit').addEventListener('click', function(){
-        sendEmail()
+        sendEmail();
     });
 
-    console.log('Document is ready!')
+    console.log('Document is ready!');
 });
