@@ -127,6 +127,8 @@
     #round-outcome{
         text-align: center;
     }
+    /*With the media queries i was not sure what to do as the game was quite responsive without them. I decided to 
+    change the sizes of the icons as when the screen gets larger the icons get smaller making them harder to see*/
      @media only screen and (min-width: 481px) {
      .option {
         margin-left: 20px;
@@ -142,14 +144,22 @@
         font-size: medium;
     }
 }
+@media only screen and (min-width: 768px) {
+    .options {
+        margin-left: 40px;
+        margin-top: 30px;
+    }
+    #punch {
+        font-size: 35px;
+    }
+}
     @media only screen and (min-width: 1025px) {
 .option {
     font-size: 30px;
   
 }
 .options {
-    padding-top: 30px;
-    margin-right: 20px;
+    padding-top: 50px;
     
 }
 .scorz {

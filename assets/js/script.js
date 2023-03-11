@@ -8,14 +8,14 @@
     const scoreBoardDiv = document.getElementsByClassName(".scorz");
     const divScissors = document.getElementById("scissors");
     const numberOfRoundsspan = document.getElementById("NumberOfRounds");
-    /*All of the scores involved in the game*/
+    /*All of the scores involved in the game as well as the scores that get sent to the users email*/
     let userScore = 0;
     let compScore = 0;
     let RoundNumber = 0;
     let userScoreEmail = 0;
     let compScoreEmail = 0;
    
- /*generates a random choice from the computer so that it can be later compared with the user scores to determine who wins the round*/
+ /*generates a random choice from the computer so that it can be later compared with the user scores to determine who wins the round i got inspiration from the youtube tutorial linked in the read me file*/
     function  computerChoices() {
         const options = ['rock','paper','scissors'];
         const ran_No = Math.floor(Math.random()*3);
@@ -24,6 +24,7 @@
     }
 /*Makes sure the Round number is increased, displays the statement showing who won and the amount of rounds it took for either the user or the computer to win. Moreover this function 
 involves the form being hidden for the duraation of the game until the user is the winner*/
+
     function numberOfRounds() {
         RoundNumber++;
         document.getElementById('form').classList.add('hide');
@@ -117,7 +118,7 @@ involves the form being hidden for the duraation of the game until the user is t
     
 
 /*Shows all of the possble choices that the user and computer makes it allows their choices to be compared. The 
-win draw and lose functions are called here to ensure that the program knows which combinations have the outcome of win, draw or lose*/
+win draw and lose functions are called here to ensure that the program knows which combinations have the outcome of win, draw or lose inspiration from the you tube video*/
     function rockpaperScissors(userChoice, pressedButton) {
         const computerChoice = computerChoices();
         console.log(`Computer plays ${computerChoice}`);
@@ -145,7 +146,7 @@ win draw and lose functions are called here to ensure that the program knows whi
      /*The number of rounds is called here to make sure that that after the scores are updated the round number should go up by 1*/
      numberOfRounds();
     }
-   /*Identifies the button clicked e.g. when i click rock the computer knows ive clicke the rock button*/
+   /*Identifies the button clicked e.g. when i click rock the computer knows ive clicked the rock button this bit of code was adapted from the freecodecamp youtube video*/
     function clickButton() {
         divPaper.addEventListener('click', function(event) {
             rockpaperScissors("paper",  event.target);
