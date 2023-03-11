@@ -109,7 +109,7 @@ Am I Responsive https://ui.dev/amiresponsive - Used to verify responsiveness of 
 
 Responsinator - http://www.responsinator.com/ Used to verify the responsiveness of the website on different devices.
 
-YouTube video - https://www.youtube.com/watch?v=jaVNP3nIAv0&ab_channel=freeCodeCamp.org
+YouTube video - https://www.youtube.com/watch?v=jaVNP3nIAv0&ab_channel=freeCodeCamp.org Gave me an insight on how I can make my own version of this game some of my code was inspired by this video
 
 Chrome Developer Tools - Used for changing details and testing responsiveness accessed by pressing f12.
 
