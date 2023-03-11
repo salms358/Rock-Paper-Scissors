@@ -7,9 +7,9 @@ Fun classic game of rock paper scissors
  # Features:
  ## Theme
  
-    The theme involves blue/green/grey colours which create a war-like theme as there is a battle between the user and the computer. 
-    
-    For the title I used grey as it matches with blue and it can be contrasted against so it can be easier to notice by the visually impaired
+      The theme involves blue/green/grey colours which create a war-like theme as there is a battle between the user and the computer. 
+      
+      For the title I used grey as it matches with blue and it can be contrasted against so it can be easier to notice by the visually impaired. This should of improved the accessibility score.
 
 
 ## Buttons
