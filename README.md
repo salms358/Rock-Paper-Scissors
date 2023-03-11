@@ -7,9 +7,9 @@ Fun classic game of rock paper scissors
  # Features:
  ## Theme
  
-      The theme involves blue/green/grey colours which create a war-like theme as there is a battle between the user and the computer. 
+      The theme involves blue/green/grey colours which create a war-like theme as there is a battle between the user and the computer. Additionally the colour scheme was inspired by battleships which have blue/green/grey colour schemes.
       
-      For the title I used grey as it matches with blue and it can be contrasted against so it can be easier to notice by the visually impaired. This should of improved the accessibility score.
+      For the title I used grey as it matches with blue and it can be contrasted against so it can be easier to notice by the visually impaired. This should have positive impact on the accessibility score.
 
 
 ## Buttons
@@ -30,26 +30,28 @@ Fun classic game of rock paper scissors
   [image of email form](https://mail.google.com/mail/u/0?ui=2&ik=318e7d6810&attid=0.1&permmsgid=msg-f:1760095816233851336&th=186d1dd1c94519c8&view=att&disp=safe)
   
 ## Captions
-    -I added some captions one of them comparing the users and computers choice and who wins e.g."Rock overpowerd paper, you win". 
+    -I added some captions one of them comparing the users and computers choice and who wins e.g."Rock overpowerd paper, you win". I added this feature as some may not know which options overpower each other (those new to playing).
 
     -Secondly, When you win or lose, a caption is displayed which shows how many rounds it took to win/lose against your opponent.
   # User stories:
   ## First-time user
     -I found it easy to get around the website.
+
     -I liked the idea of the icons glowing different colours depending if i won lost or had a draw.
+
     -The game is mobile friendly as the icons and scoreboard adapt to my screen. Instead of scattering around the page the icons are one on top of the other.
 
   ## Second-time user
     -When playing the game I noticed that when I won a box appeared asking me to enter in my email. I got sent an email showing me my scores.
 
-    -Moreover, when I won It showed me how many rounds it took to beat the computer.
+    -Moreover, when I won It showed me how many rounds it took to beat the computer which I found really helpful, it motivates me to try and get a better score in the future.
 
-    -When I win/lose the scores reset so that I can play again if. Additionally there is a caption which allows me to know why I won or lost.
+    -When I win/lose the scores reset so that I can play again. Additionally there is a caption which allows me to know why I won or lost.
 
-
+    - I played the game on my laptop in which the icons were of a decent size the game was responsive 
   ## Frequent-user
     -Whilst playing I like how everything is easy to tell the difference between the icons. Its very easy to navigate around as the colours are contrasting.
-
+    - I played the game on a tablet one of the icons was a little out of place but this did not get in the way when playing the game
   # Testing
     The game seemed to be working the same way throughout the browsers Microsoft Edge, Mozilla Firefox and Google Chrome. The email text was working and lead to the scores of the user and computer to be sent to their email.
     The website was working the same across Microsoft edge, firefox and google chrome.
