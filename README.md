@@ -1,7 +1,7 @@
 # Rock-Paper-Scissors
 Fun classic game of rock paper scissors
 ## Description
-    The game is a basic game of Rock paper scissors in which the icons will glow either green, red or blue depending if you win lose or draw with the computer. First to reach 5 points wins. If the user wins they can enter in their email to recieve their scores via email. 
+    The game is a basic game of Rock paper scissors in which the icons will glow either green, red or blue depending if you win lose or draw with the computer. First to reach 5 points wins. If the user wins they can enter in their email to recieve their scores via email. Have fun!
 
   
  [website](https://salms358.github.io/Rock-Paper-Scissors/)
@@ -21,7 +21,7 @@ Fun classic game of rock paper scissors
     This will allow it to be more convinient with individuals who perhaps have dyslexia or any other problems with reading. 
     
     Additionally there is text displayed when the user wins, draws or loses and the fact that what they chose beats the computers choice.
-  ![Green-glow](https://mail.google.com/mail/u/0?ui=2&ik=318e7d6810&attid=0.1&permmsgid=msg-f:1760096400850960798&th=186d1e59e72a419e&view=att&disp=safe)
+  ![Green-glow](https://user-images.githubusercontent.com/119611403/224514639-f7fdde31-878a-496c-94df-d247d09861b5.png)
 
   Shows that the user has won the round and scored a point as a result.
 
@@ -29,7 +29,7 @@ Fun classic game of rock paper scissors
 
  Shows that the user has lost the round against the computer therefore the computer will get a point 
 
-  ![Purple-glow](https://mail.google.com/mail/u/0?ui=2&ik=318e7d6810&attid=0.1&permmsgid=msg-f:1760096574353890183&th=186d1e824cbedb87&view=att&disp=safe)
+  ![Purple-glow](https://user-images.githubusercontent.com/119611403/224514683-9bcc5535-33a1-4452-b0d7-4e8832699760.jpeg)
 
   The purple glow indicates that that there is a draw between the user and the computer.
 
@@ -38,7 +38,7 @@ Fun classic game of rock paper scissors
     When the user wins the game a form will appear which allows the user to enter in their email and receive their scores via email. 
     
     I added this feature as it allows the user to keep track of their scores as they play or if they want to show their friends. 
-  ![image of email form](https://mail.google.com/mail/u/0?ui=2&ik=318e7d6810&attid=0.1&permmsgid=msg-f:1760095816233851336&th=186d1dd1c94519c8&view=att&disp=safe)
+  ![image of email form](https://user-images.githubusercontent.com/119611403/224514593-4d506759-3107-4a1c-a9e4-ae0cdf4498a9.png)
   
 ## Captions
     -I added some captions one of them comparing the users and computers choice and who wins e.g."Rock overpowerd paper, you win". I added this feature as some may not know which options overpower each other (those new to playing).
@@ -90,7 +90,8 @@ Fun classic game of rock paper scissors
 
 # Fixed Bugs
 -One bug involved the buttons of the website not responding once they were clicked which was resolved by removing a misplaced semicolon.
-- The combinations of the options included in the switch-case were the wrong way around causing the user and computer scores to be interpreted incorrectly.
+
+-The combinations of the options included in the switch-case were the wrong way around causing the user and computer scores to be interpreted incorrectly.
 # Known bugs
 -One of the buttons  move slightly out of place when the screen is set to tablet format. But at times this problem does not show up.
 # Deployment 
