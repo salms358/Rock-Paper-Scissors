@@ -150,7 +150,7 @@
         margin-top: 30px;
     }
     #punch {
-        font-size: 35px;
+        font-size: 25px;
     }
 }
     @media only screen and (min-width: 1025px) {
@@ -170,6 +170,6 @@
     
 }
 #punch {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
     }
