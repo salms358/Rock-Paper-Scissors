@@ -51,7 +51,8 @@ Fun classic game of rock paper scissors
     - I played the game on my laptop in which the icons were of a decent size the game was responsive 
   ## Frequent-user
     -Whilst playing I like how everything is easy to tell the difference between the icons. Its very easy to navigate around as the colours are contrasting.
-    - I played the game on a tablet one of the icons was a little out of place but this did not get in the way when playing the game
+
+    - I played the game on a tablet one of the icons was a little out of place but this did not get in the way when playing the game. Moreover when I tried to play the game on different browsers the game was exactly the same across all of the browsers.
   # Testing
     The game seemed to be working the same way throughout the browsers Microsoft Edge, Mozilla Firefox and Google Chrome. The email text was working and lead to the scores of the user and computer to be sent to their email.
     The website was working the same across Microsoft edge, firefox and google chrome.
